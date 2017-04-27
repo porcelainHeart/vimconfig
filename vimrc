@@ -153,7 +153,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    "colorscheme peaksea
+    colorscheme molokai
 catch
 endtry
 
@@ -193,8 +193,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -307,6 +307,7 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+au! BufNewFile,BufRead *.vue setf html
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
