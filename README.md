@@ -15,6 +15,6 @@ cp ./vimconfig/vimrc ~/.vimrc
 - 添加配色
 
 ```
-mkdir -p ~/.vim/colors && cp ./vimconfig/peaksea.vim "$_"
+mkdir -p ~/.vim/colors && cp ./vimconfig/molokai.vim "$_"
 ```
 - 重启vim即可
